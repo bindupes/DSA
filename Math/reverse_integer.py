@@ -1,5 +1,6 @@
 '''
-7. Reverse Integer
+
+Reverse Integer
 Medium
 Topics
 premium lock icon
@@ -45,4 +46,5 @@ class Solution(object):
             rev = rev*10+digit
         
         return sign *rev
+
 
