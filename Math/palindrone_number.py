@@ -2,7 +2,6 @@
 Given an integer x, return true if x is a palindrome, and false otherwise.
 
  
-
 Example 1:
 
 Input: x = 121
@@ -47,4 +46,5 @@ class palindrome(object):
             digit =x%10
             rev=rev*10+digit
             x//=10
+
         return rev == original
