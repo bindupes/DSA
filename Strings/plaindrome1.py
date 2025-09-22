@@ -14,7 +14,7 @@ class Three(object):
                 max_length =length
                 start_index = left+1
                 
-        return s[start_index:left+1-right]
+        return s[left+1:right]
         
         
                 
