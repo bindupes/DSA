@@ -62,4 +62,5 @@ class Solution(object):
         total -= value
       else:
         total+= value
+       prev_value=value
     return total
