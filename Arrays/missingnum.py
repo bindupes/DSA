@@ -6,20 +6,18 @@
 #Explanation: Smallest positive missing number is 3.
 
 def missingNumber(arr):
-        n= len(arr)
-        m=[]
-        for i in range(n):
-            if arr[i]>0:
-                m.append(arr[i])
-        m=sorted(set(m))    
-        minimum = 1
-        for num in m:
-             if num==minimum:
-                  minimum += 1
-        
-        return minimum
+        positives=set()
+        for num in arr:
+                if num>0:
+                        positives.add(num)
+        i=1
+        while True:
+                if i not in positives:
+                        return i
+                i+=1
 print(missingNumber([1,2,3,4,5]))
              
             
+
 
 
